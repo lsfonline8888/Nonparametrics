@@ -136,12 +136,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Title</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="概述.html"><a href="概述.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="概述.html"><a href="概述.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
-<li class="chapter" data-level="1.2" data-path="概述.html"><a href="概述.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
-<li class="chapter" data-level="1.3" data-path="概述.html"><a href="概述.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
-<li class="chapter" data-level="1.4" data-path="概述.html"><a href="概述.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="单样本位置参数.html"><a href="单样本位置参数.html"><i class="fa fa-check"></i><b>2</b> 单样本位置参数</a>
 <ul>
@@ -333,32 +333,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="bootstrap" class="section level1 hasAnchor" number="10">
 <h1><span class="header-section-number">第 10 章</span> Bootstrap<a href="bootstrap.html#bootstrap" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="sourceCode" id="cb416"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb416-1"><a href="bootstrap.html#cb416-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">25</span>,<span class="dv">30</span>,<span class="dv">5</span>)</span>
-<span id="cb416-2"><a href="bootstrap.html#cb416-2" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">1000</span> <span class="co"># number of bootstrap samples to obtain</span></span>
-<span id="cb416-3"><a href="bootstrap.html#cb416-3" aria-hidden="true" tabindex="-1"></a>xbar<span class="ot">&lt;-</span><span class="fu">rep</span>(<span class="dv">0</span>,B)</span>
-<span id="cb416-4"><a href="bootstrap.html#cb416-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B ){</span>
-<span id="cb416-5"><a href="bootstrap.html#cb416-5" aria-hidden="true" tabindex="-1"></a>xbs<span class="ot">&lt;-</span><span class="fu">sample</span>(x,<span class="fu">length</span>(x),<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
-<span id="cb416-6"><a href="bootstrap.html#cb416-6" aria-hidden="true" tabindex="-1"></a>xbar[i]<span class="ot">&lt;-</span><span class="fu">mean</span>(xbs)</span>
-<span id="cb416-7"><a href="bootstrap.html#cb416-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb416-8"><a href="bootstrap.html#cb416-8" aria-hidden="true" tabindex="-1"></a>se.xbar<span class="ot">&lt;-</span><span class="fu">sd</span>(xbar)</span>
-<span id="cb416-9"><a href="bootstrap.html#cb416-9" aria-hidden="true" tabindex="-1"></a>se.xbar</span></code></pre></div>
-<pre><code>## [1] 0.8517539</code></pre>
-<div class="sourceCode" id="cb418"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb418-1"><a href="bootstrap.html#cb418-1" aria-hidden="true" tabindex="-1"></a>tcv<span class="ot">&lt;-</span><span class="fu">qt</span>(<span class="fl">0.975</span>,<span class="fu">length</span>(x)<span class="sc">-</span><span class="dv">1</span>)</span>
-<span id="cb418-2"><a href="bootstrap.html#cb418-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>tcv<span class="sc">*</span>se.xbar</span></code></pre></div>
-<pre><code>## [1] 29.82139 33.33726</code></pre>
-<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb420-1"><a href="bootstrap.html#cb420-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>tcv<span class="sc">*</span><span class="fu">sd</span>(x)<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">length</span>(x))</span></code></pre></div>
-<pre><code>## [1] 29.75436 33.40429</code></pre>
+<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb420-1"><a href="bootstrap.html#cb420-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">25</span>,<span class="dv">30</span>,<span class="dv">5</span>)</span>
+<span id="cb420-2"><a href="bootstrap.html#cb420-2" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">1000</span> <span class="co"># number of bootstrap samples to obtain</span></span>
+<span id="cb420-3"><a href="bootstrap.html#cb420-3" aria-hidden="true" tabindex="-1"></a>xbar<span class="ot">&lt;-</span><span class="fu">rep</span>(<span class="dv">0</span>,B)</span>
+<span id="cb420-4"><a href="bootstrap.html#cb420-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B ){</span>
+<span id="cb420-5"><a href="bootstrap.html#cb420-5" aria-hidden="true" tabindex="-1"></a>xbs<span class="ot">&lt;-</span><span class="fu">sample</span>(x,<span class="fu">length</span>(x),<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb420-6"><a href="bootstrap.html#cb420-6" aria-hidden="true" tabindex="-1"></a>xbar[i]<span class="ot">&lt;-</span><span class="fu">mean</span>(xbs)</span>
+<span id="cb420-7"><a href="bootstrap.html#cb420-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb420-8"><a href="bootstrap.html#cb420-8" aria-hidden="true" tabindex="-1"></a>se.xbar<span class="ot">&lt;-</span><span class="fu">sd</span>(xbar)</span>
+<span id="cb420-9"><a href="bootstrap.html#cb420-9" aria-hidden="true" tabindex="-1"></a>se.xbar</span></code></pre></div>
+<pre><code>## [1] 0.9852612</code></pre>
+<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="bootstrap.html#cb422-1" aria-hidden="true" tabindex="-1"></a>tcv<span class="ot">&lt;-</span><span class="fu">qt</span>(<span class="fl">0.975</span>,<span class="fu">length</span>(x)<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb422-2"><a href="bootstrap.html#cb422-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>tcv<span class="sc">*</span>se.xbar</span></code></pre></div>
+<pre><code>## [1] 27.13872 31.20568</code></pre>
+<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb424-1"><a href="bootstrap.html#cb424-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>tcv<span class="sc">*</span><span class="fu">sd</span>(x)<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">length</span>(x))</span></code></pre></div>
+<pre><code>## [1] 27.14718 31.19721</code></pre>
 <div id="percentile-bootstrap-confidence-intervals" class="section level2 hasAnchor" number="10.1">
 <h2><span class="header-section-number">10.1</span> Percentile Bootstrap Confidence Intervals<a href="bootstrap.html#percentile-bootstrap-confidence-intervals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="bootstrap.html#cb422-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(xbar,<span class="at">probs=</span><span class="fu">c</span>(<span class="fl">0.025</span>,<span class="fl">0.975</span>),<span class="at">type=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="bootstrap.html#cb426-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(xbar,<span class="at">probs=</span><span class="fu">c</span>(<span class="fl">0.025</span>,<span class="fl">0.975</span>),<span class="at">type=</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>##     2.5%    97.5% 
-## 29.88558 33.17631</code></pre>
-<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb424-1"><a href="bootstrap.html#cb424-1" aria-hidden="true" tabindex="-1"></a>m<span class="ot">&lt;-</span><span class="fl">0.025</span><span class="sc">*</span><span class="dv">1000</span></span>
-<span id="cb424-2"><a href="bootstrap.html#cb424-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(xbar)[<span class="fu">c</span>(m,B<span class="sc">-</span>m)]</span></code></pre></div>
-<pre><code>## [1] 29.88558 33.17631</code></pre>
-<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="bootstrap.html#cb426-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;boot&quot;</span>)</span>
-<span id="cb426-2"><a href="bootstrap.html#cb426-2" aria-hidden="true" tabindex="-1"></a>bsxbar<span class="ot">&lt;-</span><span class="fu">boot</span>(x,<span class="cf">function</span>(x,indices) <span class="fu">mean</span>(x[indices]), B)</span>
-<span id="cb426-3"><a href="bootstrap.html#cb426-3" aria-hidden="true" tabindex="-1"></a><span class="fu">boot.ci</span>(bsxbar)</span></code></pre></div>
+## 27.30193 31.12055</code></pre>
+<div class="sourceCode" id="cb428"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb428-1"><a href="bootstrap.html#cb428-1" aria-hidden="true" tabindex="-1"></a>m<span class="ot">&lt;-</span><span class="fl">0.025</span><span class="sc">*</span><span class="dv">1000</span></span>
+<span id="cb428-2"><a href="bootstrap.html#cb428-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(xbar)[<span class="fu">c</span>(m,B<span class="sc">-</span>m)]</span></code></pre></div>
+<pre><code>## [1] 27.30193 31.12055</code></pre>
+<div class="sourceCode" id="cb430"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb430-1"><a href="bootstrap.html#cb430-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;boot&quot;</span>)</span>
+<span id="cb430-2"><a href="bootstrap.html#cb430-2" aria-hidden="true" tabindex="-1"></a>bsxbar<span class="ot">&lt;-</span><span class="fu">boot</span>(x,<span class="cf">function</span>(x,indices) <span class="fu">mean</span>(x[indices]), B)</span>
+<span id="cb430-3"><a href="bootstrap.html#cb430-3" aria-hidden="true" tabindex="-1"></a><span class="fu">boot.ci</span>(bsxbar)</span></code></pre></div>
 <pre><code>## Warning in boot.ci(bsxbar): bootstrap variances needed for studentized intervals</code></pre>
 <pre><code>## BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
 ## Based on 1000 bootstrap replicates
@@ -368,55 +368,55 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Intervals : 
 ## Level      Normal              Basic         
-## 95%   (29.97, 33.18 )   (30.03, 33.24 )  
+## 95%   (27.27, 30.97 )   (27.26, 30.95 )  
 ## 
 ## Level     Percentile            BCa          
-## 95%   (29.92, 33.13 )   (29.85, 33.08 )  
+## 95%   (27.39, 31.08 )   (27.40, 31.11 )  
 ## Calculations and Intervals on Original Scale</code></pre>
-<div class="sourceCode" id="cb429"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb429-1"><a href="bootstrap.html#cb429-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(bsxbar<span class="sc">$</span>t,<span class="at">probs=</span><span class="fu">c</span>(<span class="fl">0.025</span>,<span class="fl">0.975</span>),<span class="at">type=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb433"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb433-1"><a href="bootstrap.html#cb433-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(bsxbar<span class="sc">$</span>t,<span class="at">probs=</span><span class="fu">c</span>(<span class="fl">0.025</span>,<span class="fl">0.975</span>),<span class="at">type=</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>##     2.5%    97.5% 
-## 29.92193 33.12238</code></pre>
+## 27.39038 31.07979</code></pre>
 </div>
 <div id="bootstrap-tests-of-hypotheses" class="section level2 hasAnchor" number="10.2">
 <h2><span class="header-section-number">10.2</span> Bootstrap Tests of Hypotheses<a href="bootstrap.html#bootstrap-tests-of-hypotheses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="nursery-school-intervention" class="section level3 hasAnchor" number="10.2.1">
 <h3><span class="header-section-number">10.2.1</span> Nursery School Intervention<a href="bootstrap.html#nursery-school-intervention" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb431"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb431-1"><a href="bootstrap.html#cb431-1" aria-hidden="true" tabindex="-1"></a>school<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">82</span>,<span class="dv">69</span>,<span class="dv">73</span>,<span class="dv">43</span>,<span class="dv">58</span>,<span class="dv">56</span>,<span class="dv">76</span>,<span class="dv">65</span>)</span>
-<span id="cb431-2"><a href="bootstrap.html#cb431-2" aria-hidden="true" tabindex="-1"></a>home<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">63</span>,<span class="dv">42</span>,<span class="dv">74</span>,<span class="dv">37</span>,<span class="dv">51</span>,<span class="dv">43</span>,<span class="dv">80</span>,<span class="dv">62</span>)</span>
-<span id="cb431-3"><a href="bootstrap.html#cb431-3" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> school <span class="sc">-</span> home</span>
-<span id="cb431-4"><a href="bootstrap.html#cb431-4" aria-hidden="true" tabindex="-1"></a>dpm<span class="ot">&lt;-</span><span class="fu">c</span>(d,<span class="sc">-</span>d)</span>
-<span id="cb431-5"><a href="bootstrap.html#cb431-5" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">length</span>(d)</span>
-<span id="cb431-6"><a href="bootstrap.html#cb431-6" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">5000</span></span>
-<span id="cb431-7"><a href="bootstrap.html#cb431-7" aria-hidden="true" tabindex="-1"></a>dbs<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">sample</span>(dpm,n<span class="sc">*</span>B,<span class="at">replace=</span><span class="cn">TRUE</span>),<span class="at">ncol=</span>n)</span>
-<span id="cb431-8"><a href="bootstrap.html#cb431-8" aria-hidden="true" tabindex="-1"></a>wilcox.teststat<span class="ot">&lt;-</span><span class="cf">function</span>(x) <span class="fu">wilcox.test</span>(x)<span class="sc">$</span>statistic</span>
-<span id="cb431-9"><a href="bootstrap.html#cb431-9" aria-hidden="true" tabindex="-1"></a>bs.teststat<span class="ot">&lt;-</span><span class="fu">apply</span>(dbs,<span class="dv">1</span>,wilcox.teststat)</span>
-<span id="cb431-10"><a href="bootstrap.html#cb431-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(bs.teststat<span class="sc">&gt;=</span><span class="fu">wilcox.teststat</span>(d))</span>
-<span id="cb431-11"><a href="bootstrap.html#cb431-11" aria-hidden="true" tabindex="-1"></a><span class="co">#[1] 0.0238</span></span></code></pre></div>
+<div class="sourceCode" id="cb435"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb435-1"><a href="bootstrap.html#cb435-1" aria-hidden="true" tabindex="-1"></a>school<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">82</span>,<span class="dv">69</span>,<span class="dv">73</span>,<span class="dv">43</span>,<span class="dv">58</span>,<span class="dv">56</span>,<span class="dv">76</span>,<span class="dv">65</span>)</span>
+<span id="cb435-2"><a href="bootstrap.html#cb435-2" aria-hidden="true" tabindex="-1"></a>home<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">63</span>,<span class="dv">42</span>,<span class="dv">74</span>,<span class="dv">37</span>,<span class="dv">51</span>,<span class="dv">43</span>,<span class="dv">80</span>,<span class="dv">62</span>)</span>
+<span id="cb435-3"><a href="bootstrap.html#cb435-3" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> school <span class="sc">-</span> home</span>
+<span id="cb435-4"><a href="bootstrap.html#cb435-4" aria-hidden="true" tabindex="-1"></a>dpm<span class="ot">&lt;-</span><span class="fu">c</span>(d,<span class="sc">-</span>d)</span>
+<span id="cb435-5"><a href="bootstrap.html#cb435-5" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">length</span>(d)</span>
+<span id="cb435-6"><a href="bootstrap.html#cb435-6" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">5000</span></span>
+<span id="cb435-7"><a href="bootstrap.html#cb435-7" aria-hidden="true" tabindex="-1"></a>dbs<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">sample</span>(dpm,n<span class="sc">*</span>B,<span class="at">replace=</span><span class="cn">TRUE</span>),<span class="at">ncol=</span>n)</span>
+<span id="cb435-8"><a href="bootstrap.html#cb435-8" aria-hidden="true" tabindex="-1"></a>wilcox.teststat<span class="ot">&lt;-</span><span class="cf">function</span>(x) <span class="fu">wilcox.test</span>(x)<span class="sc">$</span>statistic</span>
+<span id="cb435-9"><a href="bootstrap.html#cb435-9" aria-hidden="true" tabindex="-1"></a>bs.teststat<span class="ot">&lt;-</span><span class="fu">apply</span>(dbs,<span class="dv">1</span>,wilcox.teststat)</span>
+<span id="cb435-10"><a href="bootstrap.html#cb435-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(bs.teststat<span class="sc">&gt;=</span><span class="fu">wilcox.teststat</span>(d))</span>
+<span id="cb435-11"><a href="bootstrap.html#cb435-11" aria-hidden="true" tabindex="-1"></a><span class="co">#[1] 0.0238</span></span></code></pre></div>
 </div>
 <div id="bootstrap-test-for-sample-mean" class="section level3 hasAnchor" number="10.2.2">
 <h3><span class="header-section-number">10.2.2</span> Bootstrap test for sample mean<a href="bootstrap.html#bootstrap-test-for-sample-mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb432-1"><a href="bootstrap.html#cb432-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">25</span>,<span class="fl">1.5</span>,<span class="dv">1</span>)</span>
-<span id="cb432-2"><a href="bootstrap.html#cb432-2" aria-hidden="true" tabindex="-1"></a>thetahat<span class="ot">&lt;-</span><span class="fu">mean</span>(x)</span>
-<span id="cb432-3"><a href="bootstrap.html#cb432-3" aria-hidden="true" tabindex="-1"></a>x0<span class="ot">&lt;-</span>x<span class="sc">-</span>thetahat<span class="sc">+</span><span class="dv">1</span> <span class="co">#theta0 is 1</span></span>
-<span id="cb432-4"><a href="bootstrap.html#cb432-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x0) <span class="co"># notice H0 is true</span></span></code></pre></div>
+<div class="sourceCode" id="cb436"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb436-1"><a href="bootstrap.html#cb436-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">25</span>,<span class="fl">1.5</span>,<span class="dv">1</span>)</span>
+<span id="cb436-2"><a href="bootstrap.html#cb436-2" aria-hidden="true" tabindex="-1"></a>thetahat<span class="ot">&lt;-</span><span class="fu">mean</span>(x)</span>
+<span id="cb436-3"><a href="bootstrap.html#cb436-3" aria-hidden="true" tabindex="-1"></a>x0<span class="ot">&lt;-</span>x<span class="sc">-</span>thetahat<span class="sc">+</span><span class="dv">1</span> <span class="co">#theta0 is 1</span></span>
+<span id="cb436-4"><a href="bootstrap.html#cb436-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x0) <span class="co"># notice H0 is true</span></span></code></pre></div>
 <pre><code>## [1] 1</code></pre>
-<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb434-1"><a href="bootstrap.html#cb434-1" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">5000</span></span>
-<span id="cb434-2"><a href="bootstrap.html#cb434-2" aria-hidden="true" tabindex="-1"></a>xbar<span class="ot">&lt;-</span><span class="fu">rep</span>(<span class="dv">0</span>,B)</span>
-<span id="cb434-3"><a href="bootstrap.html#cb434-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B ) {</span>
-<span id="cb434-4"><a href="bootstrap.html#cb434-4" aria-hidden="true" tabindex="-1"></a>xbs<span class="ot">&lt;-</span><span class="fu">sample</span>(x0,<span class="fu">length</span>(x),<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
-<span id="cb434-5"><a href="bootstrap.html#cb434-5" aria-hidden="true" tabindex="-1"></a>xbar[i]<span class="ot">&lt;-</span><span class="fu">mean</span>(xbs)</span>
-<span id="cb434-6"><a href="bootstrap.html#cb434-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb434-7"><a href="bootstrap.html#cb434-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(xbar<span class="sc">&gt;=</span>thetahat)</span></code></pre></div>
-<pre><code>## [1] 0.0092</code></pre>
-<div class="sourceCode" id="cb436"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb436-1"><a href="bootstrap.html#cb436-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rfit)</span>
-<span id="cb436-2"><a href="bootstrap.html#cb436-2" aria-hidden="true" tabindex="-1"></a>boot.rfit<span class="ot">&lt;-</span><span class="cf">function</span>(data,indices){</span>
-<span id="cb436-3"><a href="bootstrap.html#cb436-3" aria-hidden="true" tabindex="-1"></a>data<span class="ot">&lt;-</span>data[indices,]</span>
-<span id="cb436-4"><a href="bootstrap.html#cb436-4" aria-hidden="true" tabindex="-1"></a>fit<span class="ot">&lt;-</span><span class="fu">rfit</span>(weight<span class="sc">~</span>height,<span class="at">data=</span>data,<span class="at">tau=</span><span class="st">&#39;N&#39;</span>)</span>
-<span id="cb436-5"><a href="bootstrap.html#cb436-5" aria-hidden="true" tabindex="-1"></a><span class="fu">coefficients</span>(fit)[<span class="dv">2</span>]</span>
-<span id="cb436-6"><a href="bootstrap.html#cb436-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb436-7"><a href="bootstrap.html#cb436-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb436-8"><a href="bootstrap.html#cb436-8" aria-hidden="true" tabindex="-1"></a>bb.boot<span class="ot">&lt;-</span><span class="fu">boot</span>(<span class="at">data=</span>baseball,<span class="at">statistic=</span>boot.rfit,<span class="at">R=</span><span class="dv">1000</span>)</span>
-<span id="cb436-9"><a href="bootstrap.html#cb436-9" aria-hidden="true" tabindex="-1"></a>bb.boot</span></code></pre></div>
+<div class="sourceCode" id="cb438"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb438-1"><a href="bootstrap.html#cb438-1" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="dv">5000</span></span>
+<span id="cb438-2"><a href="bootstrap.html#cb438-2" aria-hidden="true" tabindex="-1"></a>xbar<span class="ot">&lt;-</span><span class="fu">rep</span>(<span class="dv">0</span>,B)</span>
+<span id="cb438-3"><a href="bootstrap.html#cb438-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B ) {</span>
+<span id="cb438-4"><a href="bootstrap.html#cb438-4" aria-hidden="true" tabindex="-1"></a>xbs<span class="ot">&lt;-</span><span class="fu">sample</span>(x0,<span class="fu">length</span>(x),<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb438-5"><a href="bootstrap.html#cb438-5" aria-hidden="true" tabindex="-1"></a>xbar[i]<span class="ot">&lt;-</span><span class="fu">mean</span>(xbs)</span>
+<span id="cb438-6"><a href="bootstrap.html#cb438-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb438-7"><a href="bootstrap.html#cb438-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(xbar<span class="sc">&gt;=</span>thetahat)</span></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode" id="cb440"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb440-1"><a href="bootstrap.html#cb440-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rfit)</span>
+<span id="cb440-2"><a href="bootstrap.html#cb440-2" aria-hidden="true" tabindex="-1"></a>boot.rfit<span class="ot">&lt;-</span><span class="cf">function</span>(data,indices){</span>
+<span id="cb440-3"><a href="bootstrap.html#cb440-3" aria-hidden="true" tabindex="-1"></a>data<span class="ot">&lt;-</span>data[indices,]</span>
+<span id="cb440-4"><a href="bootstrap.html#cb440-4" aria-hidden="true" tabindex="-1"></a>fit<span class="ot">&lt;-</span><span class="fu">rfit</span>(weight<span class="sc">~</span>height,<span class="at">data=</span>data,<span class="at">tau=</span><span class="st">&#39;N&#39;</span>)</span>
+<span id="cb440-5"><a href="bootstrap.html#cb440-5" aria-hidden="true" tabindex="-1"></a><span class="fu">coefficients</span>(fit)[<span class="dv">2</span>]</span>
+<span id="cb440-6"><a href="bootstrap.html#cb440-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb440-7"><a href="bootstrap.html#cb440-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb440-8"><a href="bootstrap.html#cb440-8" aria-hidden="true" tabindex="-1"></a>bb.boot<span class="ot">&lt;-</span><span class="fu">boot</span>(<span class="at">data=</span>baseball,<span class="at">statistic=</span>boot.rfit,<span class="at">R=</span><span class="dv">1000</span>)</span>
+<span id="cb440-9"><a href="bootstrap.html#cb440-9" aria-hidden="true" tabindex="-1"></a>bb.boot</span></code></pre></div>
 <pre><code>## 
 ## ORDINARY NONPARAMETRIC BOOTSTRAP
 ## 
@@ -427,10 +427,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Bootstrap Statistics :
 ##     original     bias    std. error
-## t1* 5.714286 -0.1405727   0.7748821</code></pre>
-<div class="sourceCode" id="cb438"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb438-1"><a href="bootstrap.html#cb438-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bb.boot)</span></code></pre></div>
+## t1* 5.714286 -0.1409288   0.7837038</code></pre>
+<div class="sourceCode" id="cb442"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb442-1"><a href="bootstrap.html#cb442-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bb.boot)</span></code></pre></div>
 <p><img src="10-Bootstrap_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<div class="sourceCode" id="cb439"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb439-1"><a href="bootstrap.html#cb439-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boot.ci</span>(bb.boot,<span class="at">type=</span><span class="st">&#39;perc&#39;</span>,<span class="at">index=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb443"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb443-1"><a href="bootstrap.html#cb443-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boot.ci</span>(bb.boot,<span class="at">type=</span><span class="st">&#39;perc&#39;</span>,<span class="at">index=</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
 ## Based on 1000 bootstrap replicates
 ## 
@@ -439,7 +439,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Intervals : 
 ## Level     Percentile     
-## 95%   ( 3.75,  7.00 )  
+## 95%   ( 3.805,  7.000 )  
 ## Calculations and Intervals on Original Scale</code></pre>
 
 </div>

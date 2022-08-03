@@ -136,12 +136,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Title</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="概述.html"><a href="概述.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="概述.html"><a href="概述.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
-<li class="chapter" data-level="1.2" data-path="概述.html"><a href="概述.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
-<li class="chapter" data-level="1.3" data-path="概述.html"><a href="概述.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
-<li class="chapter" data-level="1.4" data-path="概述.html"><a href="概述.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="单样本位置参数.html"><a href="单样本位置参数.html"><i class="fa fa-check"></i><b>2</b> 单样本位置参数</a>
 <ul>
@@ -337,8 +337,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.1</span> 二维列联表的齐性和独立性的<span class="math inline">\(\chi^2\)</span>检验<a href="列联表.html#二维列联表的齐性和独立性的chi2检验" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="齐性" class="section level3 hasAnchor" number="8.1.1">
 <h3><span class="header-section-number">8.1.1</span> 齐性<a href="列联表.html#齐性" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="列联表.html#cb343-1" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="fu">matrix</span>(<span class="fu">scan</span>(<span class="st">&quot;data/wid.txt&quot;</span>),<span class="dv">3</span>,<span class="dv">2</span>,<span class="at">b=</span>T)</span>
-<span id="cb343-2"><a href="列联表.html#cb343-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(y)</span></code></pre></div>
+<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="列联表.html#cb347-1" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="fu">matrix</span>(<span class="fu">scan</span>(<span class="st">&quot;data/wid.txt&quot;</span>),<span class="dv">3</span>,<span class="dv">2</span>,<span class="at">b=</span>T)</span>
+<span id="cb347-2"><a href="列联表.html#cb347-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(y)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
@@ -347,21 +347,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="独立性" class="section level3 hasAnchor" number="8.1.2">
 <h3><span class="header-section-number">8.1.2</span> 独立性<a href="列联表.html#独立性" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="列联表.html#cb345-1" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="fu">matrix</span>(<span class="fu">scan</span>(<span class="st">&quot;data/shop.txt&quot;</span>),<span class="dv">3</span>,<span class="dv">3</span>,<span class="at">b=</span>T)</span>
-<span id="cb345-2"><a href="列联表.html#cb345-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(y)</span></code></pre></div>
+<div class="sourceCode" id="cb349"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb349-1"><a href="列联表.html#cb349-1" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="fu">matrix</span>(<span class="fu">scan</span>(<span class="st">&quot;data/shop.txt&quot;</span>),<span class="dv">3</span>,<span class="dv">3</span>,<span class="at">b=</span>T)</span>
+<span id="cb349-2"><a href="列联表.html#cb349-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(y)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  y
 ## X-squared = 18.651, df = 4, p-value = 0.0009203</code></pre>
-<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="列联表.html#cb347-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">=</span><span class="fu">loglin</span>(y,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#fit log-linear model</span></span></code></pre></div>
+<div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="列联表.html#cb351-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">=</span><span class="fu">loglin</span>(y,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#fit log-linear model</span></span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
-<div class="sourceCode" id="cb349"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb349-1"><a href="列联表.html#cb349-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>lrt,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
+<div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="列联表.html#cb353-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>lrt,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
 <pre><code>## [1] 0.000903918</code></pre>
 </div>
 <div id="independence-of-two-discrete-random-variables-例子吸烟与肺癌" class="section level3 hasAnchor" number="8.1.3">
 <h3><span class="header-section-number">8.1.3</span> Independence of Two Discrete Random Variables （例子：吸烟与肺癌）<a href="列联表.html#independence-of-two-discrete-random-variables-例子吸烟与肺癌" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="列联表.html#cb351-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">43</span>,<span class="dv">13</span>,<span class="dv">162</span>,<span class="dv">121</span>),<span class="dv">2</span>,<span class="dv">2</span>),<span class="at">correct=</span>F)</span></code></pre></div>
+<div class="sourceCode" id="cb355"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb355-1"><a href="列联表.html#cb355-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">43</span>,<span class="dv">13</span>,<span class="dv">162</span>,<span class="dv">121</span>),<span class="dv">2</span>,<span class="dv">2</span>),<span class="at">correct=</span>F)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
@@ -373,18 +373,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.2</span> 8.2 低维列联表的Fisher精确检验<a href="列联表.html#低维列联表的fisher精确检验" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="数据为表格形式" class="section level3 hasAnchor" number="8.2.1">
 <h3><span class="header-section-number">8.2.1</span> 数据为表格形式<a href="列联表.html#数据为表格形式" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="列联表.html#cb353-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/stroke.txt&quot;</span>);</span>
-<span id="cb353-2"><a href="列联表.html#cb353-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">-</span><span class="fu">phyper</span>(<span class="dv">34</span>,<span class="dv">60</span>,<span class="dv">53</span>,<span class="dv">50</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="列联表.html#cb357-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/stroke.txt&quot;</span>);</span>
+<span id="cb357-2"><a href="列联表.html#cb357-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">-</span><span class="fu">phyper</span>(<span class="dv">34</span>,<span class="dv">60</span>,<span class="dv">53</span>,<span class="dv">50</span>)</span></code></pre></div>
 <pre><code>## [1] 0.001176454</code></pre>
-<div class="sourceCode" id="cb355"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb355-1"><a href="列联表.html#cb355-1" aria-hidden="true" tabindex="-1"></a><span class="fu">phyper</span>(<span class="dv">15</span>,<span class="dv">53</span>,<span class="dv">60</span>,<span class="dv">50</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb359"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb359-1"><a href="列联表.html#cb359-1" aria-hidden="true" tabindex="-1"></a><span class="fu">phyper</span>(<span class="dv">15</span>,<span class="dv">53</span>,<span class="dv">60</span>,<span class="dv">50</span>)</span></code></pre></div>
 <pre><code>## [1] 0.001176454</code></pre>
-<div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="列联表.html#cb357-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(x) <span class="do">##different results</span></span></code></pre></div>
+<div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="列联表.html#cb361-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(x) <span class="do">##different results</span></span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 ## 
 ## data:  x
 ## X-squared = 9.107, df = 1, p-value = 0.002546</code></pre>
-<div class="sourceCode" id="cb359"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb359-1"><a href="列联表.html#cb359-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fisher.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb363"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb363-1"><a href="列联表.html#cb363-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fisher.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
@@ -399,9 +399,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="数据为数据框格式" class="section level3 hasAnchor" number="8.2.2">
 <h3><span class="header-section-number">8.2.2</span> 数据为数据框格式<a href="列联表.html#数据为数据框格式" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="列联表.html#cb361-1" aria-hidden="true" tabindex="-1"></a>x1<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/strokeA.txt&quot;</span>)</span>
-<span id="cb361-2"><a href="列联表.html#cb361-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(x1)</span>
-<span id="cb361-3"><a href="列联表.html#cb361-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fisher.test</span>(<span class="fu">xtabs</span>(V1<span class="sc">~</span>.,x1))</span></code></pre></div>
+<div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="列联表.html#cb365-1" aria-hidden="true" tabindex="-1"></a>x1<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/strokeA.txt&quot;</span>)</span>
+<span id="cb365-2"><a href="列联表.html#cb365-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(x1)</span>
+<span id="cb365-3"><a href="列联表.html#cb365-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fisher.test</span>(<span class="fu">xtabs</span>(V1<span class="sc">~</span>.,x1))</span></code></pre></div>
 <pre><code>## 
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
@@ -419,17 +419,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.3</span> 8.3 两个比例的比较<a href="列联表.html#两个比例的比较" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="例8.3-关于中风的研究" class="section level3 hasAnchor" number="8.3.1">
 <h3><span class="header-section-number">8.3.1</span> 例8.3 关于中风的研究<a href="列联表.html#例8.3-关于中风的研究" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb363"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb363-1"><a href="列联表.html#cb363-1" aria-hidden="true" tabindex="-1"></a>p1<span class="ot">=</span>x[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">1</span>,]);</span>
-<span id="cb363-2"><a href="列联表.html#cb363-2" aria-hidden="true" tabindex="-1"></a>p2<span class="ot">=</span>x[<span class="dv">2</span>,<span class="dv">1</span>]<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">2</span>,]);</span>
-<span id="cb363-3"><a href="列联表.html#cb363-3" aria-hidden="true" tabindex="-1"></a>pdif1<span class="ot">=</span>p1<span class="sc">-</span>p2;</span>
-<span id="cb363-4"><a href="列联表.html#cb363-4" aria-hidden="true" tabindex="-1"></a>se1<span class="ot">=</span><span class="fu">sqrt</span>(p1<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p1)<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">1</span>,])<span class="sc">+</span>p2<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p2)<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">2</span>,]))</span>
-<span id="cb363-5"><a href="列联表.html#cb363-5" aria-hidden="true" tabindex="-1"></a>pdifc1<span class="ot">=</span><span class="fu">c</span>(p1<span class="sc">-</span>p2<span class="fl">-1.96</span><span class="sc">*</span>se1,p1<span class="sc">-</span>p2<span class="fl">+1.96</span><span class="sc">*</span>se1)</span>
-<span id="cb363-6"><a href="列联表.html#cb363-6" aria-hidden="true" tabindex="-1"></a>rr1<span class="ot">=</span>p1<span class="sc">/</span>p2;</span>
-<span id="cb363-7"><a href="列联表.html#cb363-7" aria-hidden="true" tabindex="-1"></a>ser1<span class="ot">=</span><span class="fu">sqrt</span>((<span class="dv">1</span><span class="sc">-</span>p1)<span class="sc">/</span>x[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>(<span class="dv">1</span><span class="sc">-</span>p2)<span class="sc">/</span>x[<span class="dv">2</span>,<span class="dv">1</span>]);</span>
-<span id="cb363-8"><a href="列联表.html#cb363-8" aria-hidden="true" tabindex="-1"></a>rrc1<span class="ot">=</span><span class="fu">c</span>(rr1<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.96</span><span class="sc">*</span>ser1),rr1<span class="sc">*</span><span class="fu">exp</span>(<span class="fl">1.96</span><span class="sc">*</span>ser1))</span>
-<span id="cb363-9"><a href="列联表.html#cb363-9" aria-hidden="true" tabindex="-1"></a>or1<span class="ot">=</span>(p1<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>p1))<span class="sc">/</span>(p2<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>p2));seor1<span class="ot">=</span><span class="fu">sqrt</span>(<span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>x))</span>
-<span id="cb363-10"><a href="列联表.html#cb363-10" aria-hidden="true" tabindex="-1"></a>orc1<span class="ot">=</span><span class="fu">c</span>(or1<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.96</span><span class="sc">*</span>seor1),or1<span class="sc">*</span><span class="fu">exp</span>(<span class="fl">1.96</span><span class="sc">*</span>seor1))</span>
-<span id="cb363-11"><a href="列联表.html#cb363-11" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">dif=</span>pdif1,<span class="at">difCI=</span>pdifc1,<span class="at">RR=</span>rr1,<span class="at">RRCI=</span>rrc1,<span class="at">OR=</span>or1,<span class="at">ORCI=</span>orc1)</span></code></pre></div>
+<div class="sourceCode" id="cb367"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb367-1"><a href="列联表.html#cb367-1" aria-hidden="true" tabindex="-1"></a>p1<span class="ot">=</span>x[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">1</span>,]);</span>
+<span id="cb367-2"><a href="列联表.html#cb367-2" aria-hidden="true" tabindex="-1"></a>p2<span class="ot">=</span>x[<span class="dv">2</span>,<span class="dv">1</span>]<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">2</span>,]);</span>
+<span id="cb367-3"><a href="列联表.html#cb367-3" aria-hidden="true" tabindex="-1"></a>pdif1<span class="ot">=</span>p1<span class="sc">-</span>p2;</span>
+<span id="cb367-4"><a href="列联表.html#cb367-4" aria-hidden="true" tabindex="-1"></a>se1<span class="ot">=</span><span class="fu">sqrt</span>(p1<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p1)<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">1</span>,])<span class="sc">+</span>p2<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p2)<span class="sc">/</span><span class="fu">sum</span>(x[<span class="dv">2</span>,]))</span>
+<span id="cb367-5"><a href="列联表.html#cb367-5" aria-hidden="true" tabindex="-1"></a>pdifc1<span class="ot">=</span><span class="fu">c</span>(p1<span class="sc">-</span>p2<span class="fl">-1.96</span><span class="sc">*</span>se1,p1<span class="sc">-</span>p2<span class="fl">+1.96</span><span class="sc">*</span>se1)</span>
+<span id="cb367-6"><a href="列联表.html#cb367-6" aria-hidden="true" tabindex="-1"></a>rr1<span class="ot">=</span>p1<span class="sc">/</span>p2;</span>
+<span id="cb367-7"><a href="列联表.html#cb367-7" aria-hidden="true" tabindex="-1"></a>ser1<span class="ot">=</span><span class="fu">sqrt</span>((<span class="dv">1</span><span class="sc">-</span>p1)<span class="sc">/</span>x[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>(<span class="dv">1</span><span class="sc">-</span>p2)<span class="sc">/</span>x[<span class="dv">2</span>,<span class="dv">1</span>]);</span>
+<span id="cb367-8"><a href="列联表.html#cb367-8" aria-hidden="true" tabindex="-1"></a>rrc1<span class="ot">=</span><span class="fu">c</span>(rr1<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.96</span><span class="sc">*</span>ser1),rr1<span class="sc">*</span><span class="fu">exp</span>(<span class="fl">1.96</span><span class="sc">*</span>ser1))</span>
+<span id="cb367-9"><a href="列联表.html#cb367-9" aria-hidden="true" tabindex="-1"></a>or1<span class="ot">=</span>(p1<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>p1))<span class="sc">/</span>(p2<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>p2));seor1<span class="ot">=</span><span class="fu">sqrt</span>(<span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>x))</span>
+<span id="cb367-10"><a href="列联表.html#cb367-10" aria-hidden="true" tabindex="-1"></a>orc1<span class="ot">=</span><span class="fu">c</span>(or1<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.96</span><span class="sc">*</span>seor1),or1<span class="sc">*</span><span class="fu">exp</span>(<span class="fl">1.96</span><span class="sc">*</span>seor1))</span>
+<span id="cb367-11"><a href="列联表.html#cb367-11" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">dif=</span>pdif1,<span class="at">difCI=</span>pdifc1,<span class="at">RR=</span>rr1,<span class="at">RRCI=</span>rrc1,<span class="at">OR=</span>or1,<span class="at">ORCI=</span>orc1)</span></code></pre></div>
 <pre><code>## $dif
 ## [1] 0.3031746
 ## 
@@ -450,23 +450,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="one-sample-problems" class="section level3 hasAnchor" number="8.3.2">
 <h3><span class="header-section-number">8.3.2</span> One-Sample Problems*<a href="列联表.html#one-sample-problems" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="列联表.html#cb365-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Squeaky Hip Replacements). </span></span>
-<span id="cb365-2"><a href="列联表.html#cb365-2" aria-hidden="true" tabindex="-1"></a><span class="co">#As a numerical example, Devore(2012), page 284, </span></span>
-<span id="cb365-3"><a href="列联表.html#cb365-3" aria-hidden="true" tabindex="-1"></a><span class="co">#reports on a study of 143 subjects who have obtained ceramic hip replacements. </span></span>
-<span id="cb365-4"><a href="列联表.html#cb365-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Ten of the subjects in the study reported that their hip replacements squeaked. </span></span>
-<span id="cb365-5"><a href="列联表.html#cb365-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Consider patients who receive such a ceramic hip replacement </span></span>
-<span id="cb365-6"><a href="列联表.html#cb365-6" aria-hidden="true" tabindex="-1"></a><span class="co">#and let p denote the true proportion of those whose replacement hips develop a squeak.</span></span>
-<span id="cb365-7"><a href="列联表.html#cb365-7" aria-hidden="true" tabindex="-1"></a>phat<span class="ot">&lt;-</span><span class="dv">10</span><span class="sc">/</span><span class="dv">143</span></span>
-<span id="cb365-8"><a href="列联表.html#cb365-8" aria-hidden="true" tabindex="-1"></a>zcv<span class="ot">&lt;-</span><span class="fu">qnorm</span>(<span class="fl">0.975</span>)</span>
-<span id="cb365-9"><a href="列联表.html#cb365-9" aria-hidden="true" tabindex="-1"></a>phat<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>zcv<span class="sc">*</span><span class="fu">sqrt</span>(phat<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>phat)<span class="sc">/</span><span class="dv">143</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb369"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb369-1"><a href="列联表.html#cb369-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Squeaky Hip Replacements). </span></span>
+<span id="cb369-2"><a href="列联表.html#cb369-2" aria-hidden="true" tabindex="-1"></a><span class="co">#As a numerical example, Devore(2012), page 284, </span></span>
+<span id="cb369-3"><a href="列联表.html#cb369-3" aria-hidden="true" tabindex="-1"></a><span class="co">#reports on a study of 143 subjects who have obtained ceramic hip replacements. </span></span>
+<span id="cb369-4"><a href="列联表.html#cb369-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Ten of the subjects in the study reported that their hip replacements squeaked. </span></span>
+<span id="cb369-5"><a href="列联表.html#cb369-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Consider patients who receive such a ceramic hip replacement </span></span>
+<span id="cb369-6"><a href="列联表.html#cb369-6" aria-hidden="true" tabindex="-1"></a><span class="co">#and let p denote the true proportion of those whose replacement hips develop a squeak.</span></span>
+<span id="cb369-7"><a href="列联表.html#cb369-7" aria-hidden="true" tabindex="-1"></a>phat<span class="ot">&lt;-</span><span class="dv">10</span><span class="sc">/</span><span class="dv">143</span></span>
+<span id="cb369-8"><a href="列联表.html#cb369-8" aria-hidden="true" tabindex="-1"></a>zcv<span class="ot">&lt;-</span><span class="fu">qnorm</span>(<span class="fl">0.975</span>)</span>
+<span id="cb369-9"><a href="列联表.html#cb369-9" aria-hidden="true" tabindex="-1"></a>phat<span class="sc">+</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>)<span class="sc">*</span>zcv<span class="sc">*</span><span class="fu">sqrt</span>(phat<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>phat)<span class="sc">/</span><span class="dv">143</span>)</span></code></pre></div>
 <pre><code>## [1] 0.02813069 0.11172945</code></pre>
-<div class="sourceCode" id="cb367"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb367-1"><a href="列联表.html#cb367-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Left-Handed Professional Ball Players). </span></span>
-<span id="cb367-2"><a href="列联表.html#cb367-2" aria-hidden="true" tabindex="-1"></a><span class="co">#As an example of this test, </span></span>
-<span id="cb367-3"><a href="列联表.html#cb367-3" aria-hidden="true" tabindex="-1"></a><span class="co">#consider testing whether the proportion of left-handed professional baseball players is the same as the proportion of left-handed people in the general population, which is about 0.15. </span></span>
-<span id="cb367-4"><a href="列联表.html#cb367-4" aria-hidden="true" tabindex="-1"></a><span class="co">#For our sample we use the dataset baseball that consists of observations on 59 professional baseball players, including throwing hand (‘L’ or ‘R’).</span></span>
-<span id="cb367-5"><a href="列联表.html#cb367-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rfit)</span>
-<span id="cb367-6"><a href="列联表.html#cb367-6" aria-hidden="true" tabindex="-1"></a>ind<span class="ot">&lt;-</span><span class="fu">with</span>(baseball,throw<span class="sc">==</span><span class="st">&#39;L&#39;</span>)</span>
-<span id="cb367-7"><a href="列联表.html#cb367-7" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="fu">sum</span>(ind),<span class="fu">length</span>(ind),<span class="at">p=</span><span class="fl">0.15</span>,<span class="at">correct=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="列联表.html#cb371-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Left-Handed Professional Ball Players). </span></span>
+<span id="cb371-2"><a href="列联表.html#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="co">#As an example of this test, </span></span>
+<span id="cb371-3"><a href="列联表.html#cb371-3" aria-hidden="true" tabindex="-1"></a><span class="co">#consider testing whether the proportion of left-handed professional baseball players is the same as the proportion of left-handed people in the general population, which is about 0.15. </span></span>
+<span id="cb371-4"><a href="列联表.html#cb371-4" aria-hidden="true" tabindex="-1"></a><span class="co">#For our sample we use the dataset baseball that consists of observations on 59 professional baseball players, including throwing hand (‘L’ or ‘R’).</span></span>
+<span id="cb371-5"><a href="列联表.html#cb371-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rfit)</span>
+<span id="cb371-6"><a href="列联表.html#cb371-6" aria-hidden="true" tabindex="-1"></a>ind<span class="ot">&lt;-</span><span class="fu">with</span>(baseball,throw<span class="sc">==</span><span class="st">&#39;L&#39;</span>)</span>
+<span id="cb371-7"><a href="列联表.html#cb371-7" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="fu">sum</span>(ind),<span class="fu">length</span>(ind),<span class="at">p=</span><span class="fl">0.15</span>,<span class="at">correct=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## 
 ##  1-sample proportions test without continuity correction
 ## 
@@ -478,7 +478,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## sample estimates:
 ##         p 
 ## 0.2542373</code></pre>
-<div class="sourceCode" id="cb369"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb369-1"><a href="列联表.html#cb369-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.test</span>(<span class="fu">sum</span>(ind),<span class="dv">59</span>,<span class="at">p=</span>.<span class="dv">15</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="列联表.html#cb373-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.test</span>(<span class="fu">sum</span>(ind),<span class="dv">59</span>,<span class="at">p=</span>.<span class="dv">15</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Exact binomial test
 ## 
@@ -493,13 +493,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="two-sample-problems" class="section level3 hasAnchor" number="8.3.3">
 <h3><span class="header-section-number">8.3.3</span> Two-Sample Problems*<a href="列联表.html#two-sample-problems" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="列联表.html#cb371-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Polio Vaccine). Rasmussen (1992), page 355, </span></span>
-<span id="cb371-2"><a href="列联表.html#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="co">#discusses one of the original clinical studies for the efficacy of the Salk polio vaccine which took place in 1954. </span></span>
-<span id="cb371-3"><a href="列联表.html#cb371-3" aria-hidden="true" tabindex="-1"></a><span class="co">#The effectiveness of the vaccine was not known and there were fears that it could even cause polio since the vaccine contained live virus. </span></span>
-<span id="cb371-4"><a href="列联表.html#cb371-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Children with parental written consent were randomly divided into two groups. #Children in the treatment group (1) were injected with the vaccine while those in the control or placebo group (2) were injected with a biologically inert solution. </span></span>
-<span id="cb371-5"><a href="列联表.html#cb371-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Let p1 and p2 denote the true proportions of children who get polio in the treatment and control groups, respectively. </span></span>
-<span id="cb371-6"><a href="列联表.html#cb371-6" aria-hidden="true" tabindex="-1"></a><span class="co">#The hypothesis of interest is the two-sided hypothesis (2.18).</span></span>
-<span id="cb371-7"><a href="列联表.html#cb371-7" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="fu">c</span>(<span class="dv">57</span>,<span class="dv">199</span>),<span class="fu">c</span>(<span class="dv">200745</span>,<span class="dv">201229</span>),<span class="at">correct=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb375-1"><a href="列联表.html#cb375-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Polio Vaccine). Rasmussen (1992), page 355, </span></span>
+<span id="cb375-2"><a href="列联表.html#cb375-2" aria-hidden="true" tabindex="-1"></a><span class="co">#discusses one of the original clinical studies for the efficacy of the Salk polio vaccine which took place in 1954. </span></span>
+<span id="cb375-3"><a href="列联表.html#cb375-3" aria-hidden="true" tabindex="-1"></a><span class="co">#The effectiveness of the vaccine was not known and there were fears that it could even cause polio since the vaccine contained live virus. </span></span>
+<span id="cb375-4"><a href="列联表.html#cb375-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Children with parental written consent were randomly divided into two groups. #Children in the treatment group (1) were injected with the vaccine while those in the control or placebo group (2) were injected with a biologically inert solution. </span></span>
+<span id="cb375-5"><a href="列联表.html#cb375-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Let p1 and p2 denote the true proportions of children who get polio in the treatment and control groups, respectively. </span></span>
+<span id="cb375-6"><a href="列联表.html#cb375-6" aria-hidden="true" tabindex="-1"></a><span class="co">#The hypothesis of interest is the two-sided hypothesis (2.18).</span></span>
+<span id="cb375-7"><a href="列联表.html#cb375-7" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="fu">c</span>(<span class="dv">57</span>,<span class="dv">199</span>),<span class="fu">c</span>(<span class="dv">200745</span>,<span class="dv">201229</span>),<span class="at">correct=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## 
 ##  2-sample test for equality of proportions without continuity
 ##  correction
@@ -519,11 +519,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><span class="math inline">\(2 \times 2 \times K\)</span>列联表</li>
 </ul>
-<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="列联表.html#cb373-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/hospital.txt&quot;</span>);</span>
-<span id="cb373-2"><a href="列联表.html#cb373-2" aria-hidden="true" tabindex="-1"></a>tmp<span class="ot">=</span><span class="fu">array</span>(<span class="fu">c</span>(x[,<span class="dv">4</span>]),<span class="at">dim=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>),<span class="at">dimnames=</span><span class="fu">list</span>(<span class="at">effect=</span><span class="fu">c</span>(<span class="st">&quot;Y&quot;</span>,<span class="st">&quot;N&quot;</span>),</span>
-<span id="cb373-3"><a href="列联表.html#cb373-3" aria-hidden="true" tabindex="-1"></a><span class="at">med=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>),<span class="at">hosptl=</span><span class="fu">c</span>(<span class="st">&quot;I&quot;</span>, <span class="st">&quot;II&quot;</span>,<span class="st">&quot;III&quot;</span>,<span class="st">&quot;IV&quot;</span>)));</span>
-<span id="cb373-4"><a href="列联表.html#cb373-4" aria-hidden="true" tabindex="-1"></a>tab<span class="ot">=</span><span class="fu">ftable</span>(. <span class="sc">~</span> med<span class="sc">+</span>effect,tmp);</span>
-<span id="cb373-5"><a href="列联表.html#cb373-5" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(tab,<span class="fu">mantelhaen.test</span>(tmp))</span></code></pre></div>
+<div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb377-1"><a href="列联表.html#cb377-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/hospital.txt&quot;</span>);</span>
+<span id="cb377-2"><a href="列联表.html#cb377-2" aria-hidden="true" tabindex="-1"></a>tmp<span class="ot">=</span><span class="fu">array</span>(<span class="fu">c</span>(x[,<span class="dv">4</span>]),<span class="at">dim=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>),<span class="at">dimnames=</span><span class="fu">list</span>(<span class="at">effect=</span><span class="fu">c</span>(<span class="st">&quot;Y&quot;</span>,<span class="st">&quot;N&quot;</span>),</span>
+<span id="cb377-3"><a href="列联表.html#cb377-3" aria-hidden="true" tabindex="-1"></a><span class="at">med=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>),<span class="at">hosptl=</span><span class="fu">c</span>(<span class="st">&quot;I&quot;</span>, <span class="st">&quot;II&quot;</span>,<span class="st">&quot;III&quot;</span>,<span class="st">&quot;IV&quot;</span>)));</span>
+<span id="cb377-4"><a href="列联表.html#cb377-4" aria-hidden="true" tabindex="-1"></a>tab<span class="ot">=</span><span class="fu">ftable</span>(. <span class="sc">~</span> med<span class="sc">+</span>effect,tmp);</span>
+<span id="cb377-5"><a href="列联表.html#cb377-5" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(tab,<span class="fu">mantelhaen.test</span>(tmp))</span></code></pre></div>
 <pre><code>## [[1]]
 ##            hosptl  I II III IV
 ## med effect                    
@@ -547,11 +547,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="对数线性模型与高维列联表的独立性" class="section level2 hasAnchor" number="8.5">
 <h2><span class="header-section-number">8.5</span> 8.5 对数线性模型与高维列联表的独立性<a href="列联表.html#对数线性模型与高维列联表的独立性" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb375-1"><a href="列联表.html#cb375-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/wmq.txt&quot;</span>,<span class="at">header=</span>T);</span>
-<span id="cb375-2"><a href="列联表.html#cb375-2" aria-hidden="true" tabindex="-1"></a>xt<span class="ot">=</span><span class="fu">xtabs</span>(Count<span class="sc">~</span>.,x)</span>
-<span id="cb375-3"><a href="列联表.html#cb375-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="列联表.html#cb379-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/wmq.txt&quot;</span>,<span class="at">header=</span>T);</span>
+<span id="cb379-2"><a href="列联表.html#cb379-2" aria-hidden="true" tabindex="-1"></a>xt<span class="ot">=</span><span class="fu">xtabs</span>(Count<span class="sc">~</span>.,x)</span>
+<span id="cb379-3"><a href="列联表.html#cb379-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
-<div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb377-1"><a href="列联表.html#cb377-1" aria-hidden="true" tabindex="-1"></a>a</span></code></pre></div>
+<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="列联表.html#cb381-1" aria-hidden="true" tabindex="-1"></a>a</span></code></pre></div>
 <pre><code>## $lrt
 ## [1] 1.099333
 ## 
@@ -567,11 +567,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Capacity&quot; &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="列联表.html#cb379-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>lrt,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
+<div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="列联表.html#cb383-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>lrt,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
 <pre><code>## [1] 0.7772351</code></pre>
-<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="列联表.html#cb381-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>pearson,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
+<div class="sourceCode" id="cb385"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb385-1"><a href="列联表.html#cb385-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(a<span class="sc">$</span>pearson,a<span class="sc">$</span>df,<span class="at">low=</span>F)</span></code></pre></div>
 <pre><code>## [1] 0.7770992</code></pre>
-<div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="列联表.html#cb383-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)),<span class="at">para=</span>T)</span></code></pre></div>
+<div class="sourceCode" id="cb387"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb387-1"><a href="列联表.html#cb387-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)),<span class="at">para=</span>T)</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
 <pre><code>## $lrt
 ## [1] 1.099333
@@ -619,7 +619,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##        L  0.25557458 -0.25557458
 ##        M -0.03440251  0.03440251
 ##        S -0.22117207  0.22117207</code></pre>
-<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="列联表.html#cb386-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="列联表.html#cb390-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 0</code></pre>
 <pre><code>## $lrt
 ## [1] 26.56823
@@ -639,7 +639,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[3]]
 ## [1] &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb389"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb389-1"><a href="列联表.html#cb389-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="列联表.html#cb393-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
 <pre><code>## $lrt
 ## [1] 22.80078
@@ -656,7 +656,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="列联表.html#cb392-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="列联表.html#cb396-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 0</code></pre>
 <pre><code>## $lrt
 ## [1] 24.70076
@@ -673,7 +673,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Area&quot;     &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb395"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb395-1"><a href="列联表.html#cb395-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb399-1"><a href="列联表.html#cb399-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
 <pre><code>## $lrt
 ## [1] 4.866786
@@ -690,7 +690,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Capacity&quot; &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="列联表.html#cb398-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="列联表.html#cb402-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 1.421085e-14</code></pre>
 <pre><code>## $lrt
 ## [1] 1.099333
@@ -707,7 +707,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Capacity&quot; &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb401"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb401-1"><a href="列联表.html#cb401-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb405"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb405-1"><a href="列联表.html#cb405-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 2.842171e-14</code></pre>
 <pre><code>## $lrt
 ## [1] 20.9333
@@ -724,7 +724,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $margin[[2]]
 ## [1] &quot;Area&quot;     &quot;Location&quot;</code></pre>
-<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="列联表.html#cb404-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb408-1"><a href="列联表.html#cb408-1" aria-hidden="true" tabindex="-1"></a><span class="fu">loglin</span>(xt,<span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>))</span></code></pre></div>
 <pre><code>## 2 iterations: deviation 0</code></pre>
 <pre><code>## $lrt
 ## [1] 2.999312

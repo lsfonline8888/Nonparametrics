@@ -15,7 +15,7 @@ se.xbar
 ```
 
 ```
-## [1] 0.8517539
+## [1] 0.9852612
 ```
 
 ```r
@@ -24,7 +24,7 @@ mean(x)+c(-1,1)*tcv*se.xbar
 ```
 
 ```
-## [1] 29.82139 33.33726
+## [1] 27.13872 31.20568
 ```
 
 ```r
@@ -32,7 +32,7 @@ mean(x)+c(-1,1)*tcv*sd(x)/sqrt(length(x))
 ```
 
 ```
-## [1] 29.75436 33.40429
+## [1] 27.14718 31.19721
 ```
  
 
@@ -45,7 +45,7 @@ quantile(xbar,probs=c(0.025,0.975),type=1)
 
 ```
 ##     2.5%    97.5% 
-## 29.88558 33.17631
+## 27.30193 31.12055
 ```
 
 ```r
@@ -54,7 +54,7 @@ sort(xbar)[c(m,B-m)]
 ```
 
 ```
-## [1] 29.88558 33.17631
+## [1] 27.30193 31.12055
 ```
 
 ```r
@@ -76,10 +76,10 @@ boot.ci(bsxbar)
 ## 
 ## Intervals : 
 ## Level      Normal              Basic         
-## 95%   (29.97, 33.18 )   (30.03, 33.24 )  
+## 95%   (27.27, 30.97 )   (27.26, 30.95 )  
 ## 
 ## Level     Percentile            BCa          
-## 95%   (29.92, 33.13 )   (29.85, 33.08 )  
+## 95%   (27.39, 31.08 )   (27.40, 31.11 )  
 ## Calculations and Intervals on Original Scale
 ```
 
@@ -89,7 +89,7 @@ quantile(bsxbar$t,probs=c(0.025,0.975),type=1)
 
 ```
 ##     2.5%    97.5% 
-## 29.92193 33.12238
+## 27.39038 31.07979
 ```
  
 ## Bootstrap Tests of Hypotheses
@@ -136,7 +136,7 @@ mean(xbar>=thetahat)
 ```
 
 ```
-## [1] 0.0092
+## [1] 0
 ```
 
 
@@ -163,7 +163,7 @@ bb.boot
 ## 
 ## Bootstrap Statistics :
 ##     original     bias    std. error
-## t1* 5.714286 -0.1405727   0.7748821
+## t1* 5.714286 -0.1409288   0.7837038
 ```
 
 ```r
@@ -185,7 +185,7 @@ boot.ci(bb.boot,type='perc',index=1)
 ## 
 ## Intervals : 
 ## Level     Percentile     
-## 95%   ( 3.75,  7.00 )  
+## 95%   ( 3.805,  7.000 )  
 ## Calculations and Intervals on Original Scale
 ```
  

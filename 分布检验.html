@@ -136,12 +136,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Title</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="概述.html"><a href="概述.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 概述</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="概述.html"><a href="概述.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
-<li class="chapter" data-level="1.2" data-path="概述.html"><a href="概述.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
-<li class="chapter" data-level="1.3" data-path="概述.html"><a href="概述.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
-<li class="chapter" data-level="1.4" data-path="概述.html"><a href="概述.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#习题1-1.5-数据可视化查看对总体分布的假设是否合理"><i class="fa fa-check"></i><b>1.1</b> 习题1: (1.5 数据可视化，查看对总体分布的假设是否合理)</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#数据变换box-cox变换"><i class="fa fa-check"></i><b>1.2</b> 数据变换（Box-Cox变换）</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#section"><i class="fa fa-check"></i><b>1.3</b> 2.(1)</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#section-1"><i class="fa fa-check"></i><b>1.4</b> 2.(2)</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="单样本位置参数.html"><a href="单样本位置参数.html"><i class="fa fa-check"></i><b>2</b> 单样本位置参数</a>
 <ul>
@@ -335,19 +335,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">第 7 章</span> 分布检验<a href="分布检验.html#分布检验" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="q-q图" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Q-Q图<a href="分布检验.html#q-q图" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="分布检验.html#cb291-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/ind.txt&quot;</span>)</span>
-<span id="cb291-2"><a href="分布检验.html#cb291-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span>x<span class="sc">$</span>V1</span>
-<span id="cb291-3"><a href="分布检验.html#cb291-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
-<span id="cb291-4"><a href="分布检验.html#cb291-4" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(<span class="fu">qnorm</span>(((<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x))<span class="sc">-</span><span class="fl">0.5</span>)<span class="sc">/</span><span class="dv">20</span>,<span class="dv">15</span>,<span class="fl">0.04</span>),x)</span>
-<span id="cb291-5"><a href="分布检验.html#cb291-5" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span>(x<span class="sc">-</span><span class="fu">mean</span>(x))<span class="sc">/</span><span class="fu">sd</span>(x)</span>
-<span id="cb291-6"><a href="分布检验.html#cb291-6" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(z);<span class="fu">qqline</span>(z)</span></code></pre></div>
+<div class="sourceCode" id="cb295"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb295-1"><a href="分布检验.html#cb295-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/ind.txt&quot;</span>)</span>
+<span id="cb295-2"><a href="分布检验.html#cb295-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span>x<span class="sc">$</span>V1</span>
+<span id="cb295-3"><a href="分布检验.html#cb295-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb295-4"><a href="分布检验.html#cb295-4" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(<span class="fu">qnorm</span>(((<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x))<span class="sc">-</span><span class="fl">0.5</span>)<span class="sc">/</span><span class="dv">20</span>,<span class="dv">15</span>,<span class="fl">0.04</span>),x)</span>
+<span id="cb295-5"><a href="分布检验.html#cb295-5" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span>(x<span class="sc">-</span><span class="fu">mean</span>(x))<span class="sc">/</span><span class="fu">sd</span>(x)</span>
+<span id="cb295-6"><a href="分布检验.html#cb295-6" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(z);<span class="fu">qqline</span>(z)</span></code></pre></div>
 <p><img src="07_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 <div id="kolmogorov-smirnov单样本检验" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> 7.1 Kolmogorov-Smirnov单样本检验<a href="分布检验.html#kolmogorov-smirnov单样本检验" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="ks检验" class="section level3 hasAnchor" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> KS检验<a href="分布检验.html#ks检验" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="分布检验.html#cb292-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(x,<span class="st">&quot;pnorm&quot;</span>,<span class="dv">15</span>,<span class="fl">0.2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="分布检验.html#cb296-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(x,<span class="st">&quot;pnorm&quot;</span>,<span class="dv">15</span>,<span class="fl">0.2</span>)</span></code></pre></div>
 <pre><code>## 
 ##  One-sample Kolmogorov-Smirnov test
 ## 
@@ -357,47 +357,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="正态性检验" class="section level3 hasAnchor" number="7.2.2">
 <h3><span class="header-section-number">7.2.2</span> 正态性检验<a href="分布检验.html#正态性检验" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="分布检验.html#cb294-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="分布检验.html#cb298-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Shapiro-Wilk normality test
 ## 
 ## data:  x
 ## W = 0.97442, p-value = 0.8439</code></pre>
-<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="分布检验.html#cb296-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nortest)</span>
-<span id="cb296-2"><a href="分布检验.html#cb296-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lillie.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="分布检验.html#cb300-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nortest)</span>
+<span id="cb300-2"><a href="分布检验.html#cb300-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lillie.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Lilliefors (Kolmogorov-Smirnov) normality test
 ## 
 ## data:  x
 ## D = 0.11599, p-value = 0.6847</code></pre>
-<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="分布检验.html#cb298-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ad.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="分布检验.html#cb302-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ad.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Anderson-Darling normality test
 ## 
 ## data:  x
 ## A = 0.24208, p-value = 0.7364</code></pre>
-<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="分布检验.html#cb300-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cvm.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb304"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb304-1"><a href="分布检验.html#cb304-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cvm.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Cramer-von Mises normality test
 ## 
 ## data:  x
 ## W = 0.03417, p-value = 0.7708</code></pre>
-<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="分布检验.html#cb302-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pearson.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="分布检验.html#cb306-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pearson.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson chi-square normality test
 ## 
 ## data:  x
 ## P = 3.1, p-value = 0.5412</code></pre>
-<div class="sourceCode" id="cb304"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb304-1"><a href="分布检验.html#cb304-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sf.test</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="分布检验.html#cb308-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sf.test</span>(x)</span></code></pre></div>
 <pre><code>## 
 ##  Shapiro-Francia normality test
 ## 
 ## data:  x
 ## W = 0.9683, p-value = 0.6274</code></pre>
-<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="分布检验.html#cb306-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fBasics)</span></code></pre></div>
+<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="分布检验.html#cb310-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fBasics)</span></code></pre></div>
 <pre><code>## Loading required package: timeDate</code></pre>
 <pre><code>## Loading required package: timeSeries</code></pre>
-<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="分布检验.html#cb309-1" aria-hidden="true" tabindex="-1"></a><span class="fu">normalTest</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="分布检验.html#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="fu">normalTest</span>(x)</span></code></pre></div>
 <pre><code>## 
 ## Title:
 ##  Shapiro - Wilk Normality Test
@@ -409,8 +409,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     0.8439 
 ## 
 ## Description:
-##  Wed Aug  3 20:39:09 2022 by user:</code></pre>
-<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="分布检验.html#cb311-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ksnormTest</span>(x)</span></code></pre></div>
+##  Wed Aug  3 23:44:24 2022 by user:</code></pre>
+<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="分布检验.html#cb315-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ksnormTest</span>(x)</span></code></pre></div>
 <pre><code>## 
 ## Title:
 ##  One-sample Kolmogorov-Smirnov test
@@ -424,8 +424,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     Alternative   Greater: 1 
 ## 
 ## Description:
-##  Wed Aug  3 20:39:09 2022 by user:</code></pre>
-<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="分布检验.html#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiroTest</span>(x)</span></code></pre></div>
+##  Wed Aug  3 23:44:24 2022 by user:</code></pre>
+<div class="sourceCode" id="cb317"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb317-1"><a href="分布检验.html#cb317-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiroTest</span>(x)</span></code></pre></div>
 <pre><code>## 
 ## Title:
 ##  Shapiro - Wilk Normality Test
@@ -437,8 +437,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     0.8439 
 ## 
 ## Description:
-##  Wed Aug  3 20:39:09 2022 by user:</code></pre>
-<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="分布检验.html#cb315-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jarqueberaTest</span>(x)</span></code></pre></div>
+##  Wed Aug  3 23:44:24 2022 by user:</code></pre>
+<div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="分布检验.html#cb319-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jarqueberaTest</span>(x)</span></code></pre></div>
 <pre><code>## 
 ## Title:
 ##  Jarque - Bera Normalality Test
@@ -450,8 +450,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     Asymptotic p Value: 0.8097 
 ## 
 ## Description:
-##  Wed Aug  3 20:39:09 2022 by user:</code></pre>
-<div class="sourceCode" id="cb317"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb317-1"><a href="分布检验.html#cb317-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dagoTest</span>(x)</span></code></pre></div>
+##  Wed Aug  3 23:44:24 2022 by user:</code></pre>
+<div class="sourceCode" id="cb321"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb321-1"><a href="分布检验.html#cb321-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dagoTest</span>(x)</span></code></pre></div>
 <pre><code>## 
 ## Title:
 ##  D&#39;Agostino Normality Test
@@ -467,17 +467,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     Kurtosis Test: 0.5537 
 ## 
 ## Description:
-##  Wed Aug  3 20:39:09 2022 by user:</code></pre>
+##  Wed Aug  3 23:44:24 2022 by user:</code></pre>
 </div>
 </div>
 <div id="kolmogorov-smirnov两样本分布检验" class="section level2 hasAnchor" number="7.3">
 <h2><span class="header-section-number">7.3</span> 7.2 Kolmogorov-Smirnov两样本分布检验<a href="分布检验.html#kolmogorov-smirnov两样本分布检验" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="分布检验.html#cb319-1" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/ks2.txt&quot;</span>,<span class="at">header=</span>F);</span>
-<span id="cb319-2"><a href="分布检验.html#cb319-2" aria-hidden="true" tabindex="-1"></a>(<span class="at">x=</span>z[z[,<span class="dv">2</span>]<span class="sc">==</span><span class="dv">1</span>,<span class="dv">1</span>]);(<span class="at">y=</span>z[z[,<span class="dv">2</span>]<span class="sc">==</span><span class="dv">2</span>,<span class="dv">1</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb323"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb323-1"><a href="分布检验.html#cb323-1" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">&quot;data/ks2.txt&quot;</span>,<span class="at">header=</span>F);</span>
+<span id="cb323-2"><a href="分布检验.html#cb323-2" aria-hidden="true" tabindex="-1"></a>(<span class="at">x=</span>z[z[,<span class="dv">2</span>]<span class="sc">==</span><span class="dv">1</span>,<span class="dv">1</span>]);(<span class="at">y=</span>z[z[,<span class="dv">2</span>]<span class="sc">==</span><span class="dv">2</span>,<span class="dv">1</span>])</span></code></pre></div>
 <pre><code>##  [1] 5.38 4.38 9.33 3.66 3.72 1.66 0.23 0.08 2.36 1.71 2.01 0.90 1.54</code></pre>
 <pre><code>##  [1]  6.67 16.21 11.93  9.85 10.43 13.54  2.40 12.89  9.30 11.92  5.74 14.45
 ## [13]  1.99  9.14  2.89</code></pre>
-<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="分布检验.html#cb322-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(x,y)</span></code></pre></div>
+<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="分布检验.html#cb326-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(x,y)</span></code></pre></div>
 <pre><code>## 
 ##  Two-sample Kolmogorov-Smirnov test
 ## 
@@ -488,68 +488,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="pearson-chi2-拟合优度检验" class="section level2 hasAnchor" number="7.4">
 <h2><span class="header-section-number">7.4</span> 7.3 Pearson <span class="math inline">\(\chi^2\)</span> 拟合优度检验<a href="分布检验.html#pearson-chi2-拟合优度检验" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="分布检验.html#cb324-1" aria-hidden="true" tabindex="-1"></a>Ob<span class="ot">=</span><span class="fu">c</span>(<span class="dv">490</span>,<span class="dv">334</span>,<span class="dv">68</span>,<span class="dv">16</span>);n<span class="ot">=</span><span class="fu">sum</span>(Ob);</span>
-<span id="cb324-2"><a href="分布检验.html#cb324-2" aria-hidden="true" tabindex="-1"></a>lambda<span class="ot">=</span><span class="fu">c</span>(<span class="fu">t</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)<span class="sc">%*%</span>Ob<span class="sc">/</span>n)</span>
-<span id="cb324-3"><a href="分布检验.html#cb324-3" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">exp</span>(<span class="sc">-</span>lambda)<span class="sc">*</span>lambda<span class="sc">^</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)<span class="sc">/</span><span class="fu">factorial</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)</span>
-<span id="cb324-4"><a href="分布检验.html#cb324-4" aria-hidden="true" tabindex="-1"></a>E<span class="ot">=</span>p<span class="sc">*</span>n;</span>
-<span id="cb324-5"><a href="分布检验.html#cb324-5" aria-hidden="true" tabindex="-1"></a>Q<span class="ot">=</span><span class="fu">sum</span>((E<span class="sc">-</span>Ob)<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>E);</span>
-<span id="cb324-6"><a href="分布检验.html#cb324-6" aria-hidden="true" tabindex="-1"></a>pvalue<span class="ot">=</span><span class="fu">pchisq</span>(Q,<span class="dv">2</span>,<span class="at">low=</span>F)</span></code></pre></div>
+<div class="sourceCode" id="cb328"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb328-1"><a href="分布检验.html#cb328-1" aria-hidden="true" tabindex="-1"></a>Ob<span class="ot">=</span><span class="fu">c</span>(<span class="dv">490</span>,<span class="dv">334</span>,<span class="dv">68</span>,<span class="dv">16</span>);n<span class="ot">=</span><span class="fu">sum</span>(Ob);</span>
+<span id="cb328-2"><a href="分布检验.html#cb328-2" aria-hidden="true" tabindex="-1"></a>lambda<span class="ot">=</span><span class="fu">c</span>(<span class="fu">t</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)<span class="sc">%*%</span>Ob<span class="sc">/</span>n)</span>
+<span id="cb328-3"><a href="分布检验.html#cb328-3" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">exp</span>(<span class="sc">-</span>lambda)<span class="sc">*</span>lambda<span class="sc">^</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)<span class="sc">/</span><span class="fu">factorial</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)</span>
+<span id="cb328-4"><a href="分布检验.html#cb328-4" aria-hidden="true" tabindex="-1"></a>E<span class="ot">=</span>p<span class="sc">*</span>n;</span>
+<span id="cb328-5"><a href="分布检验.html#cb328-5" aria-hidden="true" tabindex="-1"></a>Q<span class="ot">=</span><span class="fu">sum</span>((E<span class="sc">-</span>Ob)<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>E);</span>
+<span id="cb328-6"><a href="分布检验.html#cb328-6" aria-hidden="true" tabindex="-1"></a>pvalue<span class="ot">=</span><span class="fu">pchisq</span>(Q,<span class="dv">2</span>,<span class="at">low=</span>F)</span></code></pre></div>
 <div id="goodness-of-fit-tests-for-a-single-discrete-random-variable" class="section level3 hasAnchor" number="7.4.1">
 <h3><span class="header-section-number">7.4.1</span> Goodness-of-Fit Tests for a Single Discrete Random Variable<a href="分布检验.html#goodness-of-fit-tests-for-a-single-discrete-random-variable" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="分布检验.html#cb325-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Suppose we roll a die n = 370 times </span></span>
-<span id="cb325-2"><a href="分布检验.html#cb325-2" aria-hidden="true" tabindex="-1"></a><span class="co">#and we observe the frequencies (58, 55, 62, 68, 66, 61). </span></span>
-<span id="cb325-3"><a href="分布检验.html#cb325-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Suppose we are interested in testing to see if the die is fair;</span></span>
-<span id="cb325-4"><a href="分布检验.html#cb325-4" aria-hidden="true" tabindex="-1"></a><span class="co">#i.e., p(j) ≡ 1/6.</span></span>
-<span id="cb325-5"><a href="分布检验.html#cb325-5" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">58</span>,<span class="dv">55</span>,<span class="dv">62</span>,<span class="dv">68</span>,<span class="dv">66</span>,<span class="dv">61</span>)</span>
-<span id="cb325-6"><a href="分布检验.html#cb325-6" aria-hidden="true" tabindex="-1"></a>chifit <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(x)</span>
-<span id="cb325-7"><a href="分布检验.html#cb325-7" aria-hidden="true" tabindex="-1"></a>chifit</span></code></pre></div>
+<div class="sourceCode" id="cb329"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb329-1"><a href="分布检验.html#cb329-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Suppose we roll a die n = 370 times </span></span>
+<span id="cb329-2"><a href="分布检验.html#cb329-2" aria-hidden="true" tabindex="-1"></a><span class="co">#and we observe the frequencies (58, 55, 62, 68, 66, 61). </span></span>
+<span id="cb329-3"><a href="分布检验.html#cb329-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Suppose we are interested in testing to see if the die is fair;</span></span>
+<span id="cb329-4"><a href="分布检验.html#cb329-4" aria-hidden="true" tabindex="-1"></a><span class="co">#i.e., p(j) ≡ 1/6.</span></span>
+<span id="cb329-5"><a href="分布检验.html#cb329-5" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">58</span>,<span class="dv">55</span>,<span class="dv">62</span>,<span class="dv">68</span>,<span class="dv">66</span>,<span class="dv">61</span>)</span>
+<span id="cb329-6"><a href="分布检验.html#cb329-6" aria-hidden="true" tabindex="-1"></a>chifit <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(x)</span>
+<span id="cb329-7"><a href="分布检验.html#cb329-7" aria-hidden="true" tabindex="-1"></a>chifit</span></code></pre></div>
 <pre><code>## 
 ##  Chi-squared test for given probabilities
 ## 
 ## data:  x
 ## X-squared = 1.9027, df = 5, p-value = 0.8624</code></pre>
-<div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="分布检验.html#cb327-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(chifit<span class="sc">$</span>expected,<span class="at">digits=</span><span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb331"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb331-1"><a href="分布检验.html#cb331-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(chifit<span class="sc">$</span>expected,<span class="at">digits=</span><span class="dv">4</span>)</span></code></pre></div>
 <pre><code>## [1] 61.6667 61.6667 61.6667 61.6667 61.6667 61.6667</code></pre>
-<div class="sourceCode" id="cb329"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb329-1"><a href="分布检验.html#cb329-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>((chifit<span class="sc">$</span>residuals)<span class="sc">^</span><span class="dv">2</span>,<span class="at">digits=</span><span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="分布检验.html#cb333-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>((chifit<span class="sc">$</span>residuals)<span class="sc">^</span><span class="dv">2</span>,<span class="at">digits=</span><span class="dv">4</span>)</span></code></pre></div>
 <pre><code>## [1] 0.2180 0.7207 0.0018 0.6505 0.3045 0.0072</code></pre>
-<div class="sourceCode" id="cb331"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb331-1"><a href="分布检验.html#cb331-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Birth Rate of Males to Swedish Ministers). </span></span>
-<span id="cb331-2"><a href="分布检验.html#cb331-2" aria-hidden="true" tabindex="-1"></a><span class="co">#This data is discussed on page 266 of Daniel (1978). </span></span>
-<span id="cb331-3"><a href="分布检验.html#cb331-3" aria-hidden="true" tabindex="-1"></a><span class="co">#It concerns the number of males in the first seven children </span></span>
-<span id="cb331-4"><a href="分布检验.html#cb331-4" aria-hidden="true" tabindex="-1"></a><span class="co">#for n = 1334 Swedish ministers of religion.</span></span>
-<span id="cb331-5"><a href="分布检验.html#cb331-5" aria-hidden="true" tabindex="-1"></a>oc<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">6</span>,<span class="dv">57</span>,<span class="dv">206</span>,<span class="dv">362</span>,<span class="dv">365</span>,<span class="dv">256</span>,<span class="dv">69</span>,<span class="dv">13</span>)</span>
-<span id="cb331-6"><a href="分布检验.html#cb331-6" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">sum</span>(oc)</span>
-<span id="cb331-7"><a href="分布检验.html#cb331-7" aria-hidden="true" tabindex="-1"></a>range<span class="ot">&lt;-</span><span class="dv">0</span><span class="sc">:</span><span class="dv">7</span></span>
-<span id="cb331-8"><a href="分布检验.html#cb331-8" aria-hidden="true" tabindex="-1"></a>phat<span class="ot">&lt;-</span><span class="fu">sum</span>(range<span class="sc">*</span>oc)<span class="sc">/</span>(n<span class="sc">*</span><span class="dv">7</span>)</span>
-<span id="cb331-9"><a href="分布检验.html#cb331-9" aria-hidden="true" tabindex="-1"></a>pmf<span class="ot">&lt;-</span><span class="fu">dbinom</span>(range,<span class="dv">7</span>,phat)</span>
-<span id="cb331-10"><a href="分布检验.html#cb331-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rbind</span>(range,<span class="fu">round</span>(pmf,<span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="分布检验.html#cb335-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Birth Rate of Males to Swedish Ministers). </span></span>
+<span id="cb335-2"><a href="分布检验.html#cb335-2" aria-hidden="true" tabindex="-1"></a><span class="co">#This data is discussed on page 266 of Daniel (1978). </span></span>
+<span id="cb335-3"><a href="分布检验.html#cb335-3" aria-hidden="true" tabindex="-1"></a><span class="co">#It concerns the number of males in the first seven children </span></span>
+<span id="cb335-4"><a href="分布检验.html#cb335-4" aria-hidden="true" tabindex="-1"></a><span class="co">#for n = 1334 Swedish ministers of religion.</span></span>
+<span id="cb335-5"><a href="分布检验.html#cb335-5" aria-hidden="true" tabindex="-1"></a>oc<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">6</span>,<span class="dv">57</span>,<span class="dv">206</span>,<span class="dv">362</span>,<span class="dv">365</span>,<span class="dv">256</span>,<span class="dv">69</span>,<span class="dv">13</span>)</span>
+<span id="cb335-6"><a href="分布检验.html#cb335-6" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">sum</span>(oc)</span>
+<span id="cb335-7"><a href="分布检验.html#cb335-7" aria-hidden="true" tabindex="-1"></a>range<span class="ot">&lt;-</span><span class="dv">0</span><span class="sc">:</span><span class="dv">7</span></span>
+<span id="cb335-8"><a href="分布检验.html#cb335-8" aria-hidden="true" tabindex="-1"></a>phat<span class="ot">&lt;-</span><span class="fu">sum</span>(range<span class="sc">*</span>oc)<span class="sc">/</span>(n<span class="sc">*</span><span class="dv">7</span>)</span>
+<span id="cb335-9"><a href="分布检验.html#cb335-9" aria-hidden="true" tabindex="-1"></a>pmf<span class="ot">&lt;-</span><span class="fu">dbinom</span>(range,<span class="dv">7</span>,phat)</span>
+<span id="cb335-10"><a href="分布检验.html#cb335-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rbind</span>(range,<span class="fu">round</span>(pmf,<span class="dv">3</span>))</span></code></pre></div>
 <pre><code>##        [,1]  [,2] [,3]  [,4] [,5]  [,6]  [,7]  [,8]
 ## range 0.000 1.000 2.00 3.000 4.00 5.000 6.000 7.000
 ##       0.006 0.047 0.15 0.265 0.28 0.178 0.063 0.009</code></pre>
-<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="分布检验.html#cb333-1" aria-hidden="true" tabindex="-1"></a>test.result<span class="ot">&lt;-</span><span class="fu">chisq.test</span>(oc,<span class="at">p=</span>pmf)</span>
-<span id="cb333-2"><a href="分布检验.html#cb333-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(test.result<span class="sc">$</span>statistic,<span class="at">df=</span><span class="dv">6</span>,<span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="分布检验.html#cb337-1" aria-hidden="true" tabindex="-1"></a>test.result<span class="ot">&lt;-</span><span class="fu">chisq.test</span>(oc,<span class="at">p=</span>pmf)</span>
+<span id="cb337-2"><a href="分布检验.html#cb337-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(test.result<span class="sc">$</span>statistic,<span class="at">df=</span><span class="dv">6</span>,<span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## X-squared 
 ## 0.4257546</code></pre>
-<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="分布检验.html#cb335-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(test.result<span class="sc">$</span>expected,<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="分布检验.html#cb339-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(test.result<span class="sc">$</span>expected,<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1]   8.5  63.2 200.6 353.7 374.1 237.4  83.7  12.6</code></pre>
 </div>
 <div id="several-discrete-random-variables" class="section level3 hasAnchor" number="7.4.2">
 <h3><span class="header-section-number">7.4.2</span> Several Discrete Random Variables<a href="分布检验.html#several-discrete-random-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="分布检验.html#cb337-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Type of Crime and Alcoholic Status). </span></span>
-<span id="cb337-2"><a href="分布检验.html#cb337-2" aria-hidden="true" tabindex="-1"></a><span class="co">#The contingency table, Table 2.1, </span></span>
-<span id="cb337-3"><a href="分布检验.html#cb337-3" aria-hidden="true" tabindex="-1"></a><span class="co">#contains the frequencies of criminals who committed certain crimes and whether or not they are alcoholics. </span></span>
-<span id="cb337-4"><a href="分布检验.html#cb337-4" aria-hidden="true" tabindex="-1"></a><span class="co">#We are interested in seeing whether or not the distribution of alcoholic status is the same for each type of crime.</span></span>
-<span id="cb337-5"><a href="分布检验.html#cb337-5" aria-hidden="true" tabindex="-1"></a><span class="co">#The data were obtained from Kendall and Stuart (1979).</span></span>
-<span id="cb337-6"><a href="分布检验.html#cb337-6" aria-hidden="true" tabindex="-1"></a>c1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>,<span class="dv">88</span>,<span class="dv">155</span>,<span class="dv">379</span>,<span class="dv">18</span>,<span class="dv">63</span>)</span>
-<span id="cb337-7"><a href="分布检验.html#cb337-7" aria-hidden="true" tabindex="-1"></a>c2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">43</span>,<span class="dv">62</span>,<span class="dv">110</span>,<span class="dv">300</span>,<span class="dv">14</span>,<span class="dv">144</span>)</span>
-<span id="cb337-8"><a href="分布检验.html#cb337-8" aria-hidden="true" tabindex="-1"></a>ct <span class="ot">&lt;-</span> <span class="fu">cbind</span>(c1,c2)</span>
-<span id="cb337-9"><a href="分布检验.html#cb337-9" aria-hidden="true" tabindex="-1"></a>chifit <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(ct)</span>
-<span id="cb337-10"><a href="分布检验.html#cb337-10" aria-hidden="true" tabindex="-1"></a>chifit</span></code></pre></div>
+<div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="分布检验.html#cb341-1" aria-hidden="true" tabindex="-1"></a><span class="co">#(Type of Crime and Alcoholic Status). </span></span>
+<span id="cb341-2"><a href="分布检验.html#cb341-2" aria-hidden="true" tabindex="-1"></a><span class="co">#The contingency table, Table 2.1, </span></span>
+<span id="cb341-3"><a href="分布检验.html#cb341-3" aria-hidden="true" tabindex="-1"></a><span class="co">#contains the frequencies of criminals who committed certain crimes and whether or not they are alcoholics. </span></span>
+<span id="cb341-4"><a href="分布检验.html#cb341-4" aria-hidden="true" tabindex="-1"></a><span class="co">#We are interested in seeing whether or not the distribution of alcoholic status is the same for each type of crime.</span></span>
+<span id="cb341-5"><a href="分布检验.html#cb341-5" aria-hidden="true" tabindex="-1"></a><span class="co">#The data were obtained from Kendall and Stuart (1979).</span></span>
+<span id="cb341-6"><a href="分布检验.html#cb341-6" aria-hidden="true" tabindex="-1"></a>c1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>,<span class="dv">88</span>,<span class="dv">155</span>,<span class="dv">379</span>,<span class="dv">18</span>,<span class="dv">63</span>)</span>
+<span id="cb341-7"><a href="分布检验.html#cb341-7" aria-hidden="true" tabindex="-1"></a>c2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">43</span>,<span class="dv">62</span>,<span class="dv">110</span>,<span class="dv">300</span>,<span class="dv">14</span>,<span class="dv">144</span>)</span>
+<span id="cb341-8"><a href="分布检验.html#cb341-8" aria-hidden="true" tabindex="-1"></a>ct <span class="ot">&lt;-</span> <span class="fu">cbind</span>(c1,c2)</span>
+<span id="cb341-9"><a href="分布检验.html#cb341-9" aria-hidden="true" tabindex="-1"></a>chifit <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(ct)</span>
+<span id="cb341-10"><a href="分布检验.html#cb341-10" aria-hidden="true" tabindex="-1"></a>chifit</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  ct
 ## X-squared = 49.731, df = 5, p-value = 1.573e-09</code></pre>
-<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="分布检验.html#cb339-1" aria-hidden="true" tabindex="-1"></a>(chifit<span class="sc">$</span>residuals)<span class="sc">^</span><span class="dv">2</span> <span class="co">#residuals=(observed - expected) / sqrt(expected)</span></span></code></pre></div>
+<div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="分布检验.html#cb343-1" aria-hidden="true" tabindex="-1"></a>(chifit<span class="sc">$</span>residuals)<span class="sc">^</span><span class="dv">2</span> <span class="co">#residuals=(observed - expected) / sqrt(expected)</span></span></code></pre></div>
 <pre><code>##               c1          c2
 ## [1,]  0.01617684  0.01809979
 ## [2,]  0.97600214  1.09202023
@@ -557,8 +557,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [4,]  1.16680759  1.30550686
 ## [5,]  0.07191850  0.08046750
 ## [6,] 19.61720859 21.94912045</code></pre>
-<div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="分布检验.html#cb341-1" aria-hidden="true" tabindex="-1"></a>ct2 <span class="ot">&lt;-</span> ct[<span class="sc">-</span><span class="dv">6</span>,]</span>
-<span id="cb341-2"><a href="分布检验.html#cb341-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(ct2)</span></code></pre></div>
+<div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="分布检验.html#cb345-1" aria-hidden="true" tabindex="-1"></a>ct2 <span class="ot">&lt;-</span> ct[<span class="sc">-</span><span class="dv">6</span>,]</span>
+<span id="cb345-2"><a href="分布检验.html#cb345-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(ct2)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
